@@ -1,0 +1,23 @@
+<h1>All Articles</h1>
+<p>Hello</p>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Actions</th>
+
+    </tr>
+  </thead>
+  <tbody>
+   <% @all_articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.description %></td>
+      <td>Placeholder</td>
+
+    </tr>
+   <% end %>
+  </tbody>
+</table>
+<a href="/articles/new"> create an article</a>
